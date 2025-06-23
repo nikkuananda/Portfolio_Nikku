@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Nikku Ananda Mukti</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script>
+    // Smooth scroll for navigation
+    document.addEventListener('DOMContentLoaded', function () {
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+          });
+        });
+      });
+    });
+  </script>
+</head>
+<body class="bg-gradient-to-br from-blue-50 to-indigo-100 min-h-screen text-gray-900 font-sans">
+
+  <header class="fixed w-full bg-white shadow-md z-50">
+    <div class="container mx-auto flex justify-between items-center py-4 px-6 md:px-0">
+      <span class="text-2xl font-extrabold text-indigo-700 tracking-wide">Nikku Ananda Mukti</span>
+      <nav>
+        <ul class="flex space-x-8 text-gray-800 font-semibold text-lg">
+          <li>
+            <a href="#bio" class="relative group px-2 py-1 hover:text-indigo-600 transition">
+              Bio
+              <span class="absolute left-0 -bottom-1 w-0 group-hover:w-full h-0.5 bg-indigo-600 transition-all"></span>
+            </a>
+          </li>
+          <li>
+            <a href="#projects" class="relative group px-2 py-1 hover:text-indigo-600 transition">
+              Projects
+              <span class="absolute left-0 -bottom-1 w-0 group-hover:w-full h-0.5 bg-indigo-600 transition-all"></span>
+            </a>
+          </li>
+          <li>
+            <a href="#contact" class="relative group px-2 py-1 hover:text-indigo-600 transition">
+              Contact
+              <span class="absolute left-0 -bottom-1 w-0 group-hover:w-full h-0.5 bg-indigo-600 transition-all"></span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="pt-24 container mx-auto px-4">
+
+    <!-- Hero Section -->
+    <section class="flex flex-col-reverse md:flex-row items-center md:justify-between gap-8 py-12">
+      <div class="md:w-1/2">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4 text-indigo-800">Hi, I’m <span class="text-indigo-500">Nikku Ananda Mukti</span></h1>
+        <p class="text-lg mb-6 text-gray-700">Front-end Developer passionate about creating beautiful, responsive, and user-friendly web experiences.</p>
+        <a href="#projects" class="inline-block bg-indigo-600 text-white px-6 py-2 rounded shadow hover:bg-indigo-700 transition">View My Work</a>
+      </div>
+      <img src="gambar/fotoprofil.png" alt="Profile" class="w-40 h-40 rounded-full shadow-lg object-cover border-4 border-indigo-200">
+    </section>
+
+    <!-- Bio Section -->
+    <section id="bio" class="bg-white rounded-xl shadow p-8 mb-12">
+      <h2 class="text-2xl font-semibold mb-3 text-indigo-700">About Me</h2>
+      <p class="text-gray-700 mb-2">
+        I am a dedicated front-end developer with experience in HTML, CSS, JavaScript, and Tailwind CSS. I love turning ideas into interactive digital products and always strive for clean, maintainable code and pixel-perfect design.
+      </p>
+      <p class="text-gray-700">
+        My focus is on responsive design, accessibility, and performance optimization to deliver the best experience for every user.
+      </p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="mb-12">
+      <h2 class="text-2xl font-semibold mb-6 text-indigo-700">Projects</h2>
+      <div class="grid gap-8 md:grid-cols-3">
+        <!-- Project Card 1 -->
+        <div class="bg-white rounded-xl shadow p-6 flex flex-col">
+          <img src="gambar/cafe.png" alt="Project 1" class="rounded mb-4">
+          <h3 class="font-bold text-lg mb-2">Premium Cafe</h3>
+          <p class="mb-3 text-gray-600">"A premium cafe is a high-end coffee shop that offers superior quality products, exceptional service, and a comfortable or luxurious atmosphere. It often features specialty coffee, gourmet food, and a well-designed space that creates a memorable experience for customers."</p>
+          <a href="https://github.com/nikkuananda/Cafe-Nikku" target="_blank" class="mt-auto text-indigo-600 hover:underline">View Project</a>
+        </div>
+        <!-- Project Card 2 -->
+        <div class="bg-white rounded-xl shadow p-6 flex flex-col">
+          <img src="gambar/Artikel.png" alt="Project 2" class="rounded mb-4">
+          <h3 class="font-bold text-lg mb-2">Dashboard UI</h3>
+          <p class="mb-3 text-gray-600">An interactive dashboard interface using React and Tailwind CSS, featuring dynamic charts and widgets.</p>
+          <a href="https://github.com/nikkuananda/assignmentday-18/tree/main/Assigmnetday18_Nikku_Ananda_Mukti" target="_blank" class="mt-auto text-indigo-600 hover:underline">View Project</a>
+        </div>
+        <!-- Project Card 3 -->
+        <div class="bg-white rounded-xl shadow p-6 flex flex-col">
+          <img src="https://source.unsplash.com/random/400x200?portfolio" alt="Project 3" class="rounded mb-4">
+          <h3 class="font-bold text-lg mb-2">Personal Portfolio</h3>
+          <p class="mb-3 text-gray-600">My own portfolio website showcasing my projects, skills, and contact information.</p>
+          <a href="https://example.com/project3" target="_blank" class="mt-auto text-indigo-600 hover:underline">View Project</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-white rounded-xl shadow p-8 mb-12">
+      <h2 class="text-2xl font-semibold mb-4 text-indigo-700">Contact</h2>
+      <div class="space-y-2">
+        <p>Email: <a href="mailto:email@example.com" class="text-indigo-600 hover:underline">email@example.com</a></p>
+        <p>Phone: +62 812 3456 7890</p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank" class="text-indigo-600 hover:underline">linkedin.com/in/yourprofile</a></p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="text-center py-6 bg-white/80 mt-8 shadow">
+    <p class="text-gray-600">&copy; 2025 Nama Anda. All rights reserved.</p>
+  </footer>
+</body>
+</html>
